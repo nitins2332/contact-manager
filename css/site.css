@@ -1,0 +1,140 @@
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.color-primary {
+  color: #ff3d00;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ff3d00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_manager {
+  position: relative;
+  width: 350px;
+  height: 550px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contact_manager::before {
+  position: absolute;
+  left: -20px;
+  content: "";
+  width: 100%;
+  height: 90%;
+  transform: translateY(-50%);
+  top: 50%;
+  background-color: white;
+  border-radius: 3px;
+  z-index: -1;
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contact_manager::after {
+  position: absolute;
+  right: -20px;
+  content: "";
+  width: 100%;
+  height: 90%;
+  transform: translateY(-50%);
+  top: 50%;
+  background-color: white;
+  border-radius: 3px;
+  z-index: -1;
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contact_header {
+  text-align: center;
+  padding: 20px;
+}
+
+.contact_heading {
+  color: #ff3d00;
+  letter-spacing: 5px;
+}
+
+.contact_logo {
+  color: #ff3d00;
+}
+
+.contact_form {
+  padding: 0 20px;
+}
+
+.contact_form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  background-color: #ff3d00;
+  border: none;
+  border-radius: 27px;
+}
+
+.contact_form button[type="submit"] {
+  background-color: #fff;
+  border: 2px solid #ff3d00;
+  color: #ff3d00;
+  padding: 10px 20px;
+  border-radius: 27px;
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.contact_body {
+  height: 180px;
+  /* background-color: #f00; */
+  padding: 20px 20px;
+  overflow-y: scroll;
+}
+
+.contact_item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.contact_item_info {
+  margin-left: 10px;
+  margin-right: auto;
+}
