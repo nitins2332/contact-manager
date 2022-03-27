@@ -106,6 +106,7 @@
   color: #ff3d00;
   padding: 10px 20px;
   border-radius: 27px;
+  margin-bottom: 10px;
 }
 
 input:focus {
@@ -118,7 +119,7 @@ input:focus {
 }
 
 .contact_body {
-  height: 180px;
+  height: 260px;
   /* background-color: #f00; */
   padding: 20px 20px;
   overflow-y: scroll;
@@ -137,4 +138,8 @@ input:focus {
 .contact_item_info {
   margin-left: 10px;
   margin-right: auto;
+}
+
+.onclick {
+  cursor: pointer;
 }
